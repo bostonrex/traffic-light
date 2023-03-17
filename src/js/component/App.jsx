@@ -27,23 +27,13 @@ const App = () => {
                 <div className="container mb-5">
                         <div className="stick d-flex justify-content-center mb">   </div>
                         <div className="trafficlight">
-                                <button className="light-circle" color="red" style={{
-                                        backgroundColor:
-                                                selectedButton === 'red' ? colors.red.bright  : colors.red.normal,
-                                }}
+                                <button className={`light-circle red-light ${selectedButton === 'red' && "glow-light"}`}
                                         onClick={() => handleButtonClick('red')}
                                 ></button>
-                                <button className="light-circle" color="green" style={{
-                                        backgroundColor:
-                                                selectedButton === 'yellow' ? colors.yellow.bright : colors.yellow.normal,
-                                }}
+                                <button className={`light-circle yellow-light ${selectedButton === 'yellow' && "glow-light"}`}
                                         onClick={() => handleButtonClick('yellow')}
                                 ></button>
-
-                                <button className="light-circle" color="green" style={{
-                                        backgroundColor:
-                                                selectedButton === 'green' ? colors.green.bright : colors.green.normal,
-                                }}
+                                <button className={`light-circle green-light ${selectedButton === 'green' && "glow-light"}`}
                                         onClick={() => handleButtonClick('green')}
                                 ></button>
                         </div>
