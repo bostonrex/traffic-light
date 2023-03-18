@@ -6,16 +6,13 @@ const App = () => {
 
         const colors = {
                 red: {
-                        normal: '#D44A47',
-                        bright: '#FF5D00',
-                },
-                green: {
-                        normal: '#008000',
-                        bright: '#8FFF00',
+                        normal: '#A50909'
                 },
                 yellow: {
-                        normal: '#EAD311',
-                        bright: '#FFF300',
+                        normal: '#EAD311'
+                },
+                green: {
+                        normal: '#008000'
                 },
         };
 
